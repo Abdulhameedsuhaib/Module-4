@@ -1,1 +1,30 @@
 
+// Array of names
+const names = ["John", "Jane", "Mark", "Mary", "Jack"];
+
+// Function to check if a name starts with "j" or "J"
+function startsWithJ(name) {
+    return name.charAt(0).toLowerCase() === 'j';
+}
+
+// External library 1: Printing "Goodbye JSomeName"
+function printGoodbye(name) {
+    console.log("Goodbye " + name);
+}
+
+// External library 2: Printing "Hello SomeName"
+function printHello(name) {
+    console.log("Hello " + name);
+}
+
+// Loop over the array of names
+names.forEach(name => {
+    // Check if the name starts with "j" or "J"
+    if (startsWithJ(name)) {
+        // Utilize external library 1 to print "Goodbye JSomeName"
+        printGoodbye(name);
+    } else {
+        // Utilize external library 2 to print "Hello SomeName"
+        printHello(name);
+    }
+});
